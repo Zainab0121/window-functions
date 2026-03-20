@@ -1,6 +1,6 @@
 # SQL Window Functions
 
-Window functions were one of those things that clicked slowly and then all at once. This is a full breakdown of how they work in PostgreSQL — ranking, aggregate, and offset functions — with exercises, summaries, gotchas, and everything I wished was in one place when I was learning them.
+Window functions were one of those things that clicked slowly and then all at once. This is a full breakdown of how they work in PostgreSQL :- ranking, aggregate, and offset functions, with exercises, summaries, gotchas, and everything I wished was in one place when I was learning them.
 
 ---
 
@@ -69,6 +69,6 @@ Window functions were one of those things that clicked slowly and then all at on
 | `LAG(col, n, default)` | Value n rows before current |
 | `LEAD(col, n, default)` | Value n rows after current |
 | `FIRST_VALUE(col)` | First row in the partition |
-| `LAST_VALUE(col)` | Last row — needs explicit frame clause ⚠️ |
+| `LAST_VALUE(col)` | Last row — needs explicit frame clause  |
 
 > `LAST_VALUE` requires `ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING` to work as expected.
